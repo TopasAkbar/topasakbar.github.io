@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile - Topas Akbar</title>
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9); /* Efek gelap */
+            z-index: -1;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .rounded-circle {
+            border-radius: 50%;
+        }
+        .social-list {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        .social-list li {
+            padding: 10px;
+            font-size: 19px;
+            color: #C20024;
+        }
+        .social-list li a {
+            text-decoration: none;
+            color: #C20024;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .buttons button {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid #C20024;
+        }
+        .btn-primary {
+            background-color: #C20024;
+            color: white;
+        }
+        .btn-outline-primary {
+            color: #C20024;
+            background-color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="text-center">
+                <img src="profile.jpg" width="100" class="rounded-circle">
+            </div>
+            <div class="text-center mt-3">
+                <h5 class="mt-2 mb-0">Topas Akbar</h5>
+                <span>S1 Sistem Informasi - 102022330315</span>
+                <ul class="social-list">
+                    <li><a href="https://www.instagram.com/tpsakbr/profilecard/?igsh=c2c1NXp2cDVpdGww" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@topasab11?_t=ZS-8uPCX5pnrb0&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+                <div class="buttons">
+                    <button class="btn-outline-primary">Message</button>
+                    <button class="btn-primary">Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
